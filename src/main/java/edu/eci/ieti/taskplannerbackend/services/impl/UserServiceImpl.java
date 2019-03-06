@@ -8,6 +8,8 @@ import java.util.List;
 
 @Component
 public class UserServiceImpl implements UserSevice {
+
+    private List<User> usersList;
     @Override
     public List<User> getUsersList() {
         return null;

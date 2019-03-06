@@ -13,15 +13,17 @@ import java.util.List;
 @Component
 public class TaskServiceImpl implements TaskService {
 
+    private List<Task> tasksList;
+
 
     @Override
     public List<Task> geTasksList() {
-        return null;
+        return tasksList;
     }
 
     @Override
     public Task getTaskById(String id) {
-        return null;
+        return tasksList.get(Integer.parseInt(id));
     }
 
     @Override

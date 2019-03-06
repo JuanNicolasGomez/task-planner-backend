@@ -1,4 +1,8 @@
 package edu.eci.ieti.taskplannerbackend.controllers;
 
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class UserController {
+
 }
