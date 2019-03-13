@@ -9,7 +9,8 @@ public class Task {
     private String state;
     private Date date;
 
-    public void Task(String description, String responsible, String state, Date date){
+
+    public Task(String description, String responsible, String state, Date date){
         this.description = description;
         this.responsible = responsible;
         this.state = state;

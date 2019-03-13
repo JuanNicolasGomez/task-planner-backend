@@ -7,17 +7,23 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 
+import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 
 @Component
 public class TaskServiceImpl implements TaskService {
 
-    private List<Task> tasksList;
+    private List<Task> tasksList = new ArrayList<Task>();
 
 
     @Override
     public List<Task> geTasksList() {
+        tasksList.add(new Task("desc1","res1","state1",new Date()));
+        tasksList.add(new Task("desc2","res2","state2",new Date()));
+        tasksList.add(new Task("desc3","res3","state3",new Date()));
+
         return tasksList;
     }
 
