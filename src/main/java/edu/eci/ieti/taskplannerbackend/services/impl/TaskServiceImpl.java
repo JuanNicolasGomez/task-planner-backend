@@ -17,12 +17,14 @@ public class TaskServiceImpl implements TaskService {
 
     private List<Task> tasksList = new ArrayList<Task>();
 
+    public TaskServiceImpl() {
+        this.tasksList.add(new Task("Hacer lab de COSW","Juan Gomez","In Progress",new Date()));
+        this.tasksList.add(new Task("Tarea Test creada en el backend","Juan Gomez","Done",new Date()));
+    }
 
     @Override
     public List<Task> geTasksList() {
-        tasksList.add(new Task("desc1","res1","state1",new Date()));
-        tasksList.add(new Task("desc2","res2","state2",new Date()));
-        tasksList.add(new Task("desc3","res3","state3",new Date()));
+
 
         return tasksList;
     }
